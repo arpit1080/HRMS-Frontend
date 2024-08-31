@@ -1,0 +1,27 @@
+  
+  .form-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .create-btn{
+    width: 200px;
+    height: 5.5vh;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+  }
+  
+  @media (max-width: 576px) {
+    .create-btn {
+        width: 15   0px;
+    }
+  }

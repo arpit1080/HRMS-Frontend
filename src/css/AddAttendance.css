@@ -1,0 +1,24 @@
+  
+  .attendance-actions {
+    margin-top: 20px;
+  }
+  
+  .btn-check-in {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-check-out {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  .Alert {
+    margin-top: 20px;
+  }
+  

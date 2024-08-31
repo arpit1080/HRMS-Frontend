@@ -1,0 +1,104 @@
+/* Main container that holds the image and the form */
+.main-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1200px; /* Larger container width */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+/* Form container styling */
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+/* Form header */
+.form h2 {
+    text-align: left;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form inputs */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Form submit button */
+.form button {
+    background-color: #555;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+/* Button hover effect */
+.form button:hover {
+    background-color: #333;
+}
+
+/* Image container for the background image */
+.image-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px; /* Increased max-width for a larger image container */
+    height: 100%; /* Adjusted height to make the container taller */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image inside the container */
+.image-container img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Ensure the image fills the container height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh; /* Adjusted height for a larger container */
+    }
+
+    .form {
+        padding: 40px;
+    }
+
+    .image-container {
+        max-width: 1000px; /* Further increased max-width for larger screens */
+        height: auto; /* Adjust the height if needed for larger screens */
+    }
+}

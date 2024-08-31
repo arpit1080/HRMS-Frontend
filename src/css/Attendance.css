@@ -1,0 +1,84 @@
+
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 25%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.custom-modal .modal-dialog {
+  max-width: 30%; /* Set modal width to 50% */
+  margin: 30px auto; /* Center the modal vertically */
+}
+
+.custom-modal .modal-content {
+  border-radius: 0.5rem; /* Optional: Add rounded corners to the modal */
+}
+/* Media Queries for Responsiveness */
+
+/* For tablets (portrait) and up */
+@media (max-width: 768px) {
+  .content {
+      margin-left: 0;
+      margin-top: 50px;
+  }
+
+  .content-expanded {
+      margin-left: 0;
+  }
+
+  .btn-primary {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .table th, .table td {
+      padding: 8px;
+  }
+
+  .table .btn {
+      font-size: 12px;
+      padding: 4px 10px;
+  }
+
+  .navbar {
+      padding: 0.75rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .navbar {
+      padding: 0.5rem;
+  }
+
+  .btn-primary {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .table th, .table td {
+      padding: 6px;
+      font-size: 12px;
+  }
+
+  .table .btn {
+      font-size: 10px;
+      padding: 3px 8px;
+  }
+
+  .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+}

@@ -1,0 +1,71 @@
+/* Dashboard.css */
+
+
+/* Content styles */
+.content {
+  flex-grow: 1;
+  transition: margin-left 0.3s, width 0.3s;
+}
+
+.content-expanded {
+  margin-left: 250px; /* Match sidebar width */
+}
+
+.content-collapsed {
+  margin-left: 0;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  border: 10px;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.501);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+  .content-expanded {
+      margin-left: 200px; /* Adjust based on your sidebar width */
+  }
+}
+
+@media (max-width: 768px) {
+  .content-expanded {
+      margin-left: 0;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .navbar {
+      flex-direction: column;
+  }
+
+  main {
+      padding: 0.5rem;
+  }
+
+  .card-body {
+      height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+      height: 100px;
+  }
+
+  .btn {
+      font-size: 0.875rem;
+  }
+}

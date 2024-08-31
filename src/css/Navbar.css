@@ -1,0 +1,95 @@
+/* NavBar.css */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #007bff; /*   Primary color */
+  color: white;
+  height: 60px;
+  border-bottom: 1px solid #0056b3; /* Darker shade of primary color */
+  padding: 0.5rem 1rem; /* Default padding */
+}
+
+/* Navbar Button Styles */
+.sidebar-toggle-button {
+  background-color: transparent;
+  border: none;
+  color: rgb(80, 173, 249);
+}
+
+.sidebar-toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0); /* Light overlay on hover */
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: rgba(68, 209, 252, 0.8) !important; /* Slightly transparent on hover */
+}
+
+/* Navbar Text Styles */
+.navbar-text {
+  color: white;
+}
+
+/* Responsive Design for Samsung Phones */
+
+/* Common Breakpoints for Samsung Phones */
+@media (max-width: 360px) { /* Small phones like Galaxy A series */
+  .navbar {
+      padding: 0.5rem 0.5rem;
+  }
+
+  .navbar-brand {
+      font-size: 1rem;
+  }
+
+  .navbar-text {
+      font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 412px) { /* Medium phones like Galaxy S series */
+  .navbar {
+      padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.125rem;
+  }
+
+  .navbar-text {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) { /* Larger phones and small tablets */
+  .navbar {
+      padding: 0.75rem 1rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.25rem;
+  }
+
+  .navbar-text {
+      font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) { /* Tablets and larger devices */
+  .navbar {
+      padding: 1rem 1.5rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem;
+  }
+
+  .navbar-text {
+      font-size: 1.25rem;
+  }
+}

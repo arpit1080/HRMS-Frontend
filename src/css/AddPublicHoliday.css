@@ -1,0 +1,38 @@
+.add-public-holiday-form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  textarea {
+    resize: vertical; /* Allow users to resize vertically */
+  }
+  
+  /* AddPublicHoliday.css */
+.add-public-holiday-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  padding: 20px; /* Optional padding around the form */
+}
+
+.button-container {
+  position:absolute;
+  bottom: 12px;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.form-header {
+  margin-bottom: 10px; /* Space between header and form */
+}
+
+.float-end {
+  float: right;
+}

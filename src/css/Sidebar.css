@@ -1,0 +1,63 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Adjust width as needed */
+    background-color: #343a40;
+    color: white;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* Sidebar open state */
+  .sidebar-open {
+    margin-left: 0;
+  }
+  
+  /* Sidebar closed state */
+  .sidebar-closed {
+    margin-left: -250px; /* Adjust based on the width of the sidebar */
+  }
+  
+  /* Sidebar padding */
+  .pt-3 {
+    padding-top: 1rem; /* Adjust padding as needed */
+  }
+  
+  /* Sidebar links */
+  .sidebar .nav-link {
+    color: white;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Sidebar link hover */
+  .sidebar .nav-link:hover {
+    background-color: #495057;
+    text-decoration: none;
+  }
+  
+  /* HRMS section */
+  .sidebar .nav-link.d-flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Rotate icon when HRMS is open */
+  .rotate-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-icon i {
+    font-size: 1rem;
+  }
+  
+  /* Margin for nested links */
+  .sidebar .nav-link.ms-4 {
+    margin-left: 1rem;
+  }
+
+  
